@@ -685,6 +685,24 @@ sub passCred {
   # @@TODO:
 }
 
+=item B<complete()>
+
+Finish the CGI transaction and send the appropriate response back to the
+client.
+
+This is only available after C<cgi()> has been called.  Once you call
+this function, you may no longer make any further calls to the object
+instance.
+
+This function sends data back over standard input, so nothing except
+this object instance should touch standard input.
+
+=cut
+
+sub complete {
+  # @@TODO:
+}
+
 =back
 
 =head1 AUTHOR
