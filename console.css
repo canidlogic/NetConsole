@@ -1,0 +1,88 @@
+body {
+  background-color: silver;
+  max-width: 35em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
+  margin-bottom: 5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+#divOutput {
+  background-color: white;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-right: 5em;
+  box-sizing: border-box;
+  width: 100%;
+  height: 20em;
+  overflow-x: visible;
+  overflow-y: scroll;
+  border: medium inset;
+  font-family: monospace;
+}
+
+#divOutput .client {
+  color: green;
+}
+
+#divOutput .token {
+  border: medium outset;
+  cursor: pointer;
+  padding: 0.5em;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: lightblue;
+}
+
+#divInput {
+  margin-top: 1.5em;
+  width: 100%;
+}
+
+#txtInput {
+  box-sizing: border-box;
+  width: 100%;
+  resize: vertical;
+  height: 5em;
+  padding: 0.5em;
+}
+
+#divControl {
+  margin-top: 1em;
+  width: 100%;
+  text-align: right;
+}
+
+#divControl input {
+  padding: 0.5em;
+}
+
+#divLoginID {
+  font-size: larger;
+  font-family: sans-serif;
+  font-style: italic;
+  background-color: white;
+  padding: 0.5em;
+  border: medium solid;
+}
+
+#spnLoginSite {
+  font-style: normal;
+  font-family: monospace;
+}
+
+.clsField {
+  margin-top: 1em;
+}
+
+#divLoginPanel {
+  margin-top: 1.5em;
+}
+
+#divLoginPanel input {
+  padding: 0.5em;
+}

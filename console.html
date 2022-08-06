@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>NetConsole</title>
+    <meta name="viewport" 
+      content="width=device-width, initial-scale=1.0"/>
+    <link href="console.css" rel="stylesheet"/>
+    <script src="NetConsoleClient.js" defer></script>
+    <script src="NetConsoleServer.js" defer></script>
+    
+    <!-- TODO: load your modules here -->
+    <script src="EchoServer.js" defer></script>
+    <!-- (END TODO) -->
+    
+    <script src="console_boot.js" defer></script>
+    <script src="console.js" defer></script>
+  </head>
+  <body>
+    <h1>NetConsole</h1>
+    <div id="divMainScreen">
+      <div id="divOutput">
+        <p class="server">Loading...</p>
+        <noscript>
+          <p class="server">ERROR: JavaScript is required!</p>
+        </noscript>
+      </div>
+      <div id="divInput">
+        <textarea
+          id="txtInput"
+          spellcheck="false"
+          disabled></textarea>
+      </div>
+      <div id="divControl">
+        <input
+          type="button"
+          id="btnSend"
+          value="Send"
+          disabled/>
+        <input
+          type="button"
+          id="btnStop"
+          value="Stop"
+          disabled/>
+      </div>
+    </div>
+    <div id="divLoginScreen" style="display: none;">
+      <div id="divLoginID">
+        Signing into:
+        <span id="spnLoginSite">Unknown</span>
+      </div>
+      <div class="clsField">
+        <div class="clsLabel">Username:</div>
+        <input type="text" id="username" name="username"/>
+      </div>
+      <div class="clsField">
+        <div class="clsLabel">Password:</div>
+        <td><input type="password" id="password" name="password"/></td>
+      </div>
+      <div id="divLoginPanel">
+        <input type="button" value="Sign in" id="btnLogin"/>
+        <input type="button" value="Cancel" id="btnLoginCancel"/>
+      </div>
+    </div>
+  </body>
+</html>
